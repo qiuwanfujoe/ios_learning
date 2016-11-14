@@ -10,11 +10,14 @@
 		F308D2A71DD309F700965DCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F308D2A61DD309F700965DCE /* main.m */; };
 		F308D2AA1DD309F700965DCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F308D2A91DD309F700965DCE /* AppDelegate.m */; };
 		F308D2AD1DD309F700965DCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F308D2AC1DD309F700965DCE /* ViewController.m */; };
-		F308D2B01DD309F700965DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F308D2AE1DD309F700965DCE /* Main.storyboard */; };
 		F308D2B21DD309F700965DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F308D2B11DD309F700965DCE /* Assets.xcassets */; };
 		F308D2B51DD309F700965DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F308D2B31DD309F700965DCE /* LaunchScreen.storyboard */; };
 		F308D2C01DD309F700965DCE /* ios_learningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F308D2BF1DD309F700965DCE /* ios_learningTests.m */; };
 		F308D2CB1DD309F700965DCE /* ios_learningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F308D2CA1DD309F700965DCE /* ios_learningUITests.m */; };
+		F3BB3AE71DD3124B00357FD1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BB3AE61DD3124B00357FD1 /* ViewController.xib */; };
+		F3BB3AF51DD313C500357FD1 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BB3AF41DD313C500357FD1 /* LocalAuthentication.framework */; };
+		F3BB3B081DD987DC00357FD1 /* TouchIdController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB3B061DD987DC00357FD1 /* TouchIdController.m */; };
+		F3BB3B091DD987DC00357FD1 /* TouchIdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BB3B071DD987DC00357FD1 /* TouchIdController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,6 @@
 		F308D2A91DD309F700965DCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F308D2AB1DD309F700965DCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F308D2AC1DD309F700965DCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F308D2AF1DD309F700965DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F308D2B11DD309F700965DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F308D2B41DD309F700965DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F308D2B61DD309F700965DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +53,11 @@
 		F308D2C61DD309F700965DCE /* ios_learningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_learningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F308D2CA1DD309F700965DCE /* ios_learningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_learningUITests.m; sourceTree = "<group>"; };
 		F308D2CC1DD309F700965DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3BB3AE61DD3124B00357FD1 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		F3BB3AF41DD313C500357FD1 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		F3BB3B051DD987DC00357FD1 /* TouchIdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIdController.h; sourceTree = "<group>"; };
+		F3BB3B061DD987DC00357FD1 /* TouchIdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIdController.m; sourceTree = "<group>"; };
+		F3BB3B071DD987DC00357FD1 /* TouchIdController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIdController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BB3AF51DD313C500357FD1 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,7 @@
 				F308D2BE1DD309F700965DCE /* ios_learningTests */,
 				F308D2C91DD309F700965DCE /* ios_learningUITests */,
 				F308D2A31DD309F700965DCE /* Products */,
+				F3BB3AF31DD313C500357FD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +110,12 @@
 		F308D2A41DD309F700965DCE /* ios_learning */ = {
 			isa = PBXGroup;
 			children = (
+				F3BB3B041DD987C600357FD1 /* TouchIdController */,
 				F308D2A81DD309F700965DCE /* AppDelegate.h */,
 				F308D2A91DD309F700965DCE /* AppDelegate.m */,
 				F308D2AB1DD309F700965DCE /* ViewController.h */,
 				F308D2AC1DD309F700965DCE /* ViewController.m */,
-				F308D2AE1DD309F700965DCE /* Main.storyboard */,
+				F3BB3AE61DD3124B00357FD1 /* ViewController.xib */,
 				F308D2B11DD309F700965DCE /* Assets.xcassets */,
 				F308D2B31DD309F700965DCE /* LaunchScreen.storyboard */,
 				F308D2B61DD309F700965DCE /* Info.plist */,
@@ -138,6 +148,24 @@
 				F308D2CC1DD309F700965DCE /* Info.plist */,
 			);
 			path = ios_learningUITests;
+			sourceTree = "<group>";
+		};
+		F3BB3AF31DD313C500357FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB3AF41DD313C500357FD1 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3BB3B041DD987C600357FD1 /* TouchIdController */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB3B051DD987DC00357FD1 /* TouchIdController.h */,
+				F3BB3B061DD987DC00357FD1 /* TouchIdController.m */,
+				F3BB3B071DD987DC00357FD1 /* TouchIdController.xib */,
+			);
+			name = TouchIdController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +279,8 @@
 			files = (
 				F308D2B51DD309F700965DCE /* LaunchScreen.storyboard in Resources */,
 				F308D2B21DD309F700965DCE /* Assets.xcassets in Resources */,
-				F308D2B01DD309F700965DCE /* Main.storyboard in Resources */,
+				F3BB3B091DD987DC00357FD1 /* TouchIdController.xib in Resources */,
+				F3BB3AE71DD3124B00357FD1 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +307,7 @@
 			files = (
 				F308D2AD1DD309F700965DCE /* ViewController.m in Sources */,
 				F308D2AA1DD309F700965DCE /* AppDelegate.m in Sources */,
+				F3BB3B081DD987DC00357FD1 /* TouchIdController.m in Sources */,
 				F308D2A71DD309F700965DCE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,14 +344,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F308D2AE1DD309F700965DCE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F308D2AF1DD309F700965DCE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F308D2B31DD309F700965DCE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -516,6 +538,7 @@
 				F308D2D11DD309F700965DCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F308D2D21DD309F700965DCE /* Build configuration list for PBXNativeTarget "ios_learningTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +547,7 @@
 				F308D2D41DD309F700965DCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F308D2D51DD309F700965DCE /* Build configuration list for PBXNativeTarget "ios_learningUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +556,7 @@
 				F308D2D71DD309F700965DCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
