@@ -1,0 +1,9 @@
+/xcuserdata
+*.xcuserdatad
+*/xcshareddata
+*.DS_Store
+*.xcuserstate
+/xcshareddata
+UserInterfaceState.*
+*.xcbkptlist
+*UserInterfaceState.xcuserstate
