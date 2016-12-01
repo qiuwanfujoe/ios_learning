@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TouchIdController.h"
+#import "GQChatListController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *funtionArray;
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.funtionArray = [@[@"指纹识别"] mutableCopy];
+    self.funtionArray = [@[@"指纹识别", @"融云聊天"] mutableCopy];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -45,8 +46,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TouchIdController *vc = [[TouchIdController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    if (indexPath.row == 0) {
+        TouchIdController *vc = [[TouchIdController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 1) {
+        GQChatListController *vc = [[GQChatListController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+
 }
 
 @end
