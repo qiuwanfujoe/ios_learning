@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TouchIdController.h"
 #import "GQChatListController.h"
+#import "QRCodeController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *funtionArray;
@@ -19,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.funtionArray = [@[@"指纹识别", @"融云聊天"] mutableCopy];
+    self.funtionArray = [@[@"指纹识别", @"融云聊天", @"二维码"] mutableCopy];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -46,11 +47,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 0) {
+    NSString *title = [self.funtionArray objectAtIndex:indexPath.row];
+    if ([title isEqualToString:@"指纹识别"]) {
         TouchIdController *vc = [[TouchIdController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
-    } else if (indexPath.row == 1) {
+    } else if ([title isEqualToString:@"融云聊天"]) {
         GQChatListController *vc = [[GQChatListController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:@"二维码"]) {
+        QRCodeController *vc = [[QRCodeController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 

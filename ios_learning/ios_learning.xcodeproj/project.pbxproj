@@ -58,6 +58,7 @@
 		F3CBD7131DF010D200B1ECAA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7121DF010D200B1ECAA /* CoreText.framework */; };
 		F3CBD7151DF010E700B1ECAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7141DF010E700B1ECAA /* Foundation.framework */; };
 		F3CBD7171DF010F200B1ECAA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */; };
+		F3CBD7801DF1746A00B1ECAA /* QRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CBD77F1DF1746A00B1ECAA /* QRCodeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,8 @@
 		F3CBD7121DF010D200B1ECAA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		F3CBD7141DF010E700B1ECAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		F3CBD77E1DF1746A00B1ECAA /* QRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeController.h; sourceTree = "<group>"; };
+		F3CBD77F1DF1746A00B1ECAA /* QRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +191,7 @@
 		F39D9C151DDD548300B2100A /* ios_learning */ = {
 			isa = PBXGroup;
 			children = (
+				F3CBD77D1DF1745400B1ECAA /* QRCodeController */,
 				F3CBD66E1DEED1D500B1ECAA /* RongCloud */,
 				F39D9C2D1DDD550300B2100A /* TouchIdController */,
 				F39D9C191DDD548300B2100A /* AppDelegate.h */,
@@ -345,6 +349,15 @@
 			path = JrmfIMLib;
 			sourceTree = "<group>";
 		};
+		F3CBD77D1DF1745400B1ECAA /* QRCodeController */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBD77E1DF1746A00B1ECAA /* QRCodeController.h */,
+				F3CBD77F1DF1746A00B1ECAA /* QRCodeController.m */,
+			);
+			path = QRCodeController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,6 +446,7 @@
 				F3CBD6C51DEED94D00B1ECAA /* GQChatController.m in Sources */,
 				F39D9C181DDD548300B2100A /* main.m in Sources */,
 				F3CBD6AF1DEED3C500B1ECAA /* GQChatListController.m in Sources */,
+				F3CBD7801DF1746A00B1ECAA /* QRCodeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
