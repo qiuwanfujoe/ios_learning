@@ -49,6 +49,15 @@
 		F3CBD6C11DEED8B400B1ECAA /* RongIMLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD6BE1DEED8B400B1ECAA /* RongIMLib.framework */; };
 		F3CBD6C51DEED94D00B1ECAA /* GQChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CBD6C41DEED94D00B1ECAA /* GQChatController.m */; };
 		F3CBD6C81DEEF46E00B1ECAA /* GQUserInfoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CBD6C71DEEF46E00B1ECAA /* GQUserInfoDataSource.m */; };
+		F3CBD70C1DF00EF200B1ECAA /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3CBD7031DF00EF200B1ECAA /* AlipaySDK.bundle */; };
+		F3CBD70D1DF00EF200B1ECAA /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7041DF00EF200B1ECAA /* AlipaySDK.framework */; };
+		F3CBD70E1DF00EF200B1ECAA /* JrmfInfo.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3CBD7061DF00EF200B1ECAA /* JrmfInfo.strings */; };
+		F3CBD70F1DF00EF200B1ECAA /* JResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3CBD7081DF00EF200B1ECAA /* JResource.bundle */; };
+		F3CBD7101DF00EF200B1ECAA /* JrmfPacketKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7091DF00EF200B1ECAA /* JrmfPacketKit.framework */; };
+		F3CBD7111DF00EF200B1ECAA /* JYangToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD70A1DF00EF200B1ECAA /* JYangToolKit.framework */; };
+		F3CBD7131DF010D200B1ECAA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7121DF010D200B1ECAA /* CoreText.framework */; };
+		F3CBD7151DF010E700B1ECAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7141DF010E700B1ECAA /* Foundation.framework */; };
+		F3CBD7171DF010F200B1ECAA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +112,16 @@
 		F3CBD6C41DEED94D00B1ECAA /* GQChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQChatController.m; sourceTree = "<group>"; };
 		F3CBD6C61DEEF46E00B1ECAA /* GQUserInfoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQUserInfoDataSource.h; sourceTree = "<group>"; };
 		F3CBD6C71DEEF46E00B1ECAA /* GQUserInfoDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQUserInfoDataSource.m; sourceTree = "<group>"; };
+		F3CBD7031DF00EF200B1ECAA /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		F3CBD7041DF00EF200B1ECAA /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		F3CBD7071DF00EF200B1ECAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JrmfInfo.strings; sourceTree = "<group>"; };
+		F3CBD7081DF00EF200B1ECAA /* JResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JResource.bundle; sourceTree = "<group>"; };
+		F3CBD7091DF00EF200B1ECAA /* JrmfPacketKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JrmfPacketKit.framework; sourceTree = "<group>"; };
+		F3CBD70A1DF00EF200B1ECAA /* JYangToolKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JYangToolKit.framework; sourceTree = "<group>"; };
+		F3CBD70B1DF00EF200B1ECAA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/JrmfInfo.strings"; sourceTree = "<group>"; };
+		F3CBD7121DF010D200B1ECAA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		F3CBD7141DF010E700B1ECAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +129,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CBD7171DF010F200B1ECAA /* CoreMotion.framework in Frameworks */,
+				F3CBD7151DF010E700B1ECAA /* Foundation.framework in Frameworks */,
+				F3CBD7131DF010D200B1ECAA /* CoreText.framework in Frameworks */,
 				F3CBD6AB1DEED2D900B1ECAA /* SafariServices.framework in Frameworks */,
 				F3CBD6A91DEED2D200B1ECAA /* Photos.framework in Frameworks */,
 				F3CBD6A71DEED2C900B1ECAA /* UIKit.framework in Frameworks */,
@@ -126,17 +148,20 @@
 				F3CBD6931DEED26700B1ECAA /* libc++.tbd in Frameworks */,
 				F3CBD6911DEED25700B1ECAA /* ImageIO.framework in Frameworks */,
 				F3CBD6BA1DEED85F00B1ECAA /* RongIMKit.framework in Frameworks */,
+				F3CBD7101DF00EF200B1ECAA /* JrmfPacketKit.framework in Frameworks */,
 				F3CBD68F1DEED24F00B1ECAA /* CoreVideo.framework in Frameworks */,
 				F3CBD68D1DEED24800B1ECAA /* CoreTelephony.framework in Frameworks */,
 				F3CBD68B1DEED23C00B1ECAA /* CoreMedia.framework in Frameworks */,
 				F3CBD6891DEED23300B1ECAA /* CoreLocation.framework in Frameworks */,
 				F3CBD6871DEED22C00B1ECAA /* CoreGraphics.framework in Frameworks */,
+				F3CBD70D1DF00EF200B1ECAA /* AlipaySDK.framework in Frameworks */,
 				F3CBD6851DEED22500B1ECAA /* CoreAudio.framework in Frameworks */,
 				F3CBD6C11DEED8B400B1ECAA /* RongIMLib.framework in Frameworks */,
 				F3CBD6831DEED21900B1ECAA /* CFNetwork.framework in Frameworks */,
 				F3CBD6811DEED21200B1ECAA /* AVFoundation.framework in Frameworks */,
 				F3CBD67F1DEED20B00B1ECAA /* AudioToolbox.framework in Frameworks */,
 				F3CBD67D1DEED20200B1ECAA /* AssetsLibrary.framework in Frameworks */,
+				F3CBD7111DF00EF200B1ECAA /* JYangToolKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +234,7 @@
 		F3CBD66F1DEED1D500B1ECAA /* sdk */ = {
 			isa = PBXGroup;
 			children = (
+				F3CBD7011DF00EF200B1ECAA /* RedPacket */,
 				F3CBD6BB1DEED8B400B1ECAA /* IMLib */,
 				F3CBD6B01DEED85F00B1ECAA /* IMKit */,
 			);
@@ -218,6 +244,9 @@
 		F3CBD67B1DEED20200B1ECAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */,
+				F3CBD7141DF010E700B1ECAA /* Foundation.framework */,
+				F3CBD7121DF010D200B1ECAA /* CoreText.framework */,
 				F3CBD6AA1DEED2D900B1ECAA /* SafariServices.framework */,
 				F3CBD6A81DEED2D200B1ECAA /* Photos.framework */,
 				F3CBD6A61DEED2C900B1ECAA /* UIKit.framework */,
@@ -287,6 +316,35 @@
 			path = GQChatController;
 			sourceTree = "<group>";
 		};
+		F3CBD7011DF00EF200B1ECAA /* RedPacket */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBD7021DF00EF200B1ECAA /* AlipaySDK */,
+				F3CBD7051DF00EF200B1ECAA /* JrmfIMLib */,
+			);
+			path = RedPacket;
+			sourceTree = "<group>";
+		};
+		F3CBD7021DF00EF200B1ECAA /* AlipaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBD7031DF00EF200B1ECAA /* AlipaySDK.bundle */,
+				F3CBD7041DF00EF200B1ECAA /* AlipaySDK.framework */,
+			);
+			path = AlipaySDK;
+			sourceTree = "<group>";
+		};
+		F3CBD7051DF00EF200B1ECAA /* JrmfIMLib */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBD7061DF00EF200B1ECAA /* JrmfInfo.strings */,
+				F3CBD7081DF00EF200B1ECAA /* JResource.bundle */,
+				F3CBD7091DF00EF200B1ECAA /* JrmfPacketKit.framework */,
+				F3CBD70A1DF00EF200B1ECAA /* JYangToolKit.framework */,
+			);
+			path = JrmfIMLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,8 +405,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CBD70C1DF00EF200B1ECAA /* AlipaySDK.bundle in Resources */,
 				F3CBD6B91DEED85F00B1ECAA /* RongCloud.bundle in Resources */,
 				F3CBD6B71DEED85F00B1ECAA /* Emoji.plist in Resources */,
+				F3CBD70F1DF00EF200B1ECAA /* JResource.bundle in Resources */,
+				F3CBD70E1DF00EF200B1ECAA /* JrmfInfo.strings in Resources */,
 				F39D9C341DDD557300B2100A /* ViewController.xib in Resources */,
 				F3CBD6C01DEED8B400B1ECAA /* RCConfig.plist in Resources */,
 				F39D9C261DDD548400B2100A /* LaunchScreen.storyboard in Resources */,
@@ -393,6 +454,15 @@
 				F3CBD6B61DEED85F00B1ECAA /* zh-Hans */,
 			);
 			name = RongCloudKit.strings;
+			sourceTree = "<group>";
+		};
+		F3CBD7061DF00EF200B1ECAA /* JrmfInfo.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3CBD7071DF00EF200B1ECAA /* en */,
+				F3CBD70B1DF00EF200B1ECAA /* zh-Hans */,
+			);
+			name = JrmfInfo.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -495,6 +565,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/IMKit",
 					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/IMLib",
+					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/RedPacket/AlipaySDK",
+					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/RedPacket/JrmfIMLib",
 				);
 				INFOPLIST_FILE = ios_learning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -502,6 +574,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/IMLib",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "gideon.ios-learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -516,6 +589,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/IMKit",
 					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/IMLib",
+					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/RedPacket/AlipaySDK",
+					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/RedPacket/JrmfIMLib",
 				);
 				INFOPLIST_FILE = ios_learning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -523,6 +598,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/IMLib",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "gideon.ios-learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

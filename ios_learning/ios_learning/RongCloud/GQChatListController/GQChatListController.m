@@ -9,6 +9,8 @@
 #import "GQChatListController.h"
 #import "GQChatController.h"
 #import "GQUserInfoDataSource.h"
+#import <JrmfPacketKit/JrmfPacketManager.h>
+
 NSString *const gideon1_token = @"Qg8/hQpER4qe7wO/nlcWDaFgHT/U7Groa37aXnSD4Yp8jP1gQ3/oh3BeFGhk3/6cbBCIWDxr7Bw=";
 NSString *const gideon2_token = @"O+ZQx4E/nmA9LhG4nP8BVdFeUcQ/33FCgm6dJ1qarqZZqk17LL1tPsb8SmgLfi0cmNSN6xGbJnPO4t1P1IG8KQ==";
 
@@ -16,10 +18,16 @@ NSString *const gideon2_token = @"O+ZQx4E/nmA9LhG4nP8BVdFeUcQ/33FCgm6dJ1qarqZZqk
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setNavigationBarStyle];
+    [self setChatListData];
+}
+
+- (void)setChatListData
+{
     [RCIM sharedRCIM].userInfoDataSource = self;
     [RCIM sharedRCIM].globalConversationAvatarStyle = RC_USER_AVATAR_CYCLE;
     [RCIM sharedRCIM].globalMessageAvatarStyle = RC_USER_AVATAR_CYCLE;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(show)];
+    
     [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE),
                                         @(ConversationType_DISCUSSION),
                                         @(ConversationType_CHATROOM),
@@ -44,6 +52,16 @@ NSString *const gideon2_token = @"O+ZQx4E/nmA9LhG4nP8BVdFeUcQ/33FCgm6dJ1qarqZZqk
         NSLog(@"token错误");
     }];
     
+//    self.emptyConversationView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.showConnectingStatusOnNavigatorBar = YES;
+//    self.isShowNetworkIndicatorView = NO;
+}
+
+- (void)setNavigationBarStyle
+{
+    UIBarButtonItem *button1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(show)];
+    UIBarButtonItem *button2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(sendRedPackage)];
+    self.navigationItem.rightBarButtonItems = @[button1, button2];
 }
 
 //重写RCConversationListViewController的onSelectedTableRow事件
@@ -96,6 +114,11 @@ NSString *const gideon2_token = @"O+ZQx4E/nmA9LhG4nP8BVdFeUcQ/33FCgm6dJ1qarqZZqk
     //设置聊天会话界面要显示的标题
     chat.title = chat.targetId;
     [self.navigationController pushViewController:chat animated:YES];
+}
+
+- (void)sendRedPackage
+{
+    [JrmfPacketManager getEventOpenWallet];
 }
 
 @end

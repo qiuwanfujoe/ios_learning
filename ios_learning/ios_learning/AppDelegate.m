@@ -28,9 +28,25 @@
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    if ([[RCIM sharedRCIM] openExtensionModuleUrl:url]) {
+        return YES;
+    }
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if ([[RCIM sharedRCIM] openExtensionModuleUrl:url]) {
+        return YES;
+    }
+    return YES;
+}
+
 - (void)initRongCloud
 {
     [[RCIM sharedRCIM] initWithAppKey:@"4z3hlwrv4xqkt"];
+    //设置红包扩展的Url Scheme。
+    [[RCIM sharedRCIM] setScheme:@"learningAlipay" forExtensionModule:@"JrmfPacketManager"];
 }
 
 
