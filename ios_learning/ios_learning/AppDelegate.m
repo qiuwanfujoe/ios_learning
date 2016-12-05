@@ -9,6 +9,15 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import <RongIMKit/RongIMKit.h>
+#import <UMSocialCore/UMSocialCore.h>
+
+#define kSinaWeiboAppKey @"2547227808"
+#define kRedirectURI    @"http://juzizc.com"
+#define kWeixinAppKey @"wx0dc498744b2d7638"
+#define kWeixinAppSecretKey @"c2fbb4b9f4e8b9123e4ddf9ae2f09fbc"
+
+#define kQQAppId @"1105069449"
+#define kQQSchema @"tencent1105069449"
 
 @interface AppDelegate ()
 
@@ -24,6 +33,7 @@
     UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:rootVC ];
     self.window.rootViewController = navigationVC;
     [self initRongCloud];
+    [self initUMeng];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -38,6 +48,8 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     if ([[RCIM sharedRCIM] openExtensionModuleUrl:url]) {
         return YES;
+    }else if ([[UMSocialManager defaultManager] handleOpenURL:url]) {
+        return YES;
     }
     return YES;
 }
@@ -49,5 +61,26 @@
     [[RCIM sharedRCIM] setScheme:@"learningAlipay" forExtensionModule:@"JrmfPacketManager"];
 }
 
+- (void)initUMeng
+{
+    //打开调试日志
+    [[UMSocialManager defaultManager] openLog:YES];
+    
+    //设置友盟appkey
+    [[UMSocialManager defaultManager] setUmSocialAppkey:@"58455cf8e88bad18ca000fd8"];
+    
+    // 获取友盟social版本号
+    //NSLog(@"UMeng social version: %@", [UMSocialGlobal umSocialSDKVersion]);
+    
+    //设置微信的appKey和appSecret
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wx0dc498744b2d7638" appSecret:@"c2fbb4b9f4e8b9123e4ddf9ae2f09fbc" redirectURL:@"http://mobile.umeng.com/social"];
+    
+    
+    //设置分享到QQ互联的appKey和appSecret
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1105069449"  appSecret:nil redirectURL:@"http://mobile.umeng.com/social"];
+    
+    //设置新浪的appKey和appSecret
+//    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:@"2547227808"  appSecret:@"04b48b094faeb16683c32669824ebdad" redirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+}
 
 @end
