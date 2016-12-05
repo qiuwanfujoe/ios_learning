@@ -59,6 +59,13 @@
 		F3CBD7151DF010E700B1ECAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7141DF010E700B1ECAA /* Foundation.framework */; };
 		F3CBD7171DF010F200B1ECAA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */; };
 		F3CBD7801DF1746A00B1ECAA /* QRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CBD77F1DF1746A00B1ECAA /* QRCodeController.m */; };
+		F3E56BF11DF51A3F008AE132 /* FaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E56BF01DF51A3F008AE132 /* FaceController.m */; };
+		F3E56BFA1DF52287008AE132 /* faces1.png in Resources */ = {isa = PBXBuildFile; fileRef = F3E56BF41DF52287008AE132 /* faces1.png */; };
+		F3E56BFB1DF52287008AE132 /* faces2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E56BF51DF52287008AE132 /* faces2.jpg */; };
+		F3E56BFC1DF52287008AE132 /* faces3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E56BF61DF52287008AE132 /* faces3.jpg */; };
+		F3E56BFD1DF52287008AE132 /* faces4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E56BF71DF52287008AE132 /* faces4.jpg */; };
+		F3E56BFE1DF52287008AE132 /* faces5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E56BF81DF52287008AE132 /* faces5.jpg */; };
+		F3E56BFF1DF52287008AE132 /* faces6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3E56BF91DF52287008AE132 /* faces6.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +132,14 @@
 		F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		F3CBD77E1DF1746A00B1ECAA /* QRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeController.h; sourceTree = "<group>"; };
 		F3CBD77F1DF1746A00B1ECAA /* QRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeController.m; sourceTree = "<group>"; };
+		F3E56BEF1DF51A3F008AE132 /* FaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceController.h; sourceTree = "<group>"; };
+		F3E56BF01DF51A3F008AE132 /* FaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceController.m; sourceTree = "<group>"; };
+		F3E56BF41DF52287008AE132 /* faces1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faces1.png; sourceTree = "<group>"; };
+		F3E56BF51DF52287008AE132 /* faces2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faces2.jpg; sourceTree = "<group>"; };
+		F3E56BF61DF52287008AE132 /* faces3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faces3.jpg; sourceTree = "<group>"; };
+		F3E56BF71DF52287008AE132 /* faces4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faces4.jpg; sourceTree = "<group>"; };
+		F3E56BF81DF52287008AE132 /* faces5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faces5.jpg; sourceTree = "<group>"; };
+		F3E56BF91DF52287008AE132 /* faces6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faces6.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +206,7 @@
 		F39D9C151DDD548300B2100A /* ios_learning */ = {
 			isa = PBXGroup;
 			children = (
+				F3E56BEE1DF51A33008AE132 /* FaceController */,
 				F3CBD77D1DF1745400B1ECAA /* QRCodeController */,
 				F3CBD66E1DEED1D500B1ECAA /* RongCloud */,
 				F39D9C2D1DDD550300B2100A /* TouchIdController */,
@@ -358,6 +374,21 @@
 			path = QRCodeController;
 			sourceTree = "<group>";
 		};
+		F3E56BEE1DF51A33008AE132 /* FaceController */ = {
+			isa = PBXGroup;
+			children = (
+				F3E56BF41DF52287008AE132 /* faces1.png */,
+				F3E56BF51DF52287008AE132 /* faces2.jpg */,
+				F3E56BF61DF52287008AE132 /* faces3.jpg */,
+				F3E56BF71DF52287008AE132 /* faces4.jpg */,
+				F3E56BF81DF52287008AE132 /* faces5.jpg */,
+				F3E56BF91DF52287008AE132 /* faces6.jpg */,
+				F3E56BEF1DF51A3F008AE132 /* FaceController.h */,
+				F3E56BF01DF51A3F008AE132 /* FaceController.m */,
+			);
+			path = FaceController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,14 +449,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E56BFE1DF52287008AE132 /* faces5.jpg in Resources */,
 				F3CBD70C1DF00EF200B1ECAA /* AlipaySDK.bundle in Resources */,
 				F3CBD6B91DEED85F00B1ECAA /* RongCloud.bundle in Resources */,
 				F3CBD6B71DEED85F00B1ECAA /* Emoji.plist in Resources */,
+				F3E56BFD1DF52287008AE132 /* faces4.jpg in Resources */,
 				F3CBD70F1DF00EF200B1ECAA /* JResource.bundle in Resources */,
+				F3E56BFA1DF52287008AE132 /* faces1.png in Resources */,
 				F3CBD70E1DF00EF200B1ECAA /* JrmfInfo.strings in Resources */,
 				F39D9C341DDD557300B2100A /* ViewController.xib in Resources */,
 				F3CBD6C01DEED8B400B1ECAA /* RCConfig.plist in Resources */,
+				F3E56BFC1DF52287008AE132 /* faces3.jpg in Resources */,
 				F39D9C261DDD548400B2100A /* LaunchScreen.storyboard in Resources */,
+				F3E56BFF1DF52287008AE132 /* faces6.jpg in Resources */,
+				F3E56BFB1DF52287008AE132 /* faces2.jpg in Resources */,
 				F3CBD6B81DEED85F00B1ECAA /* RongCloudKit.strings in Resources */,
 				F39D9C231DDD548400B2100A /* Assets.xcassets in Resources */,
 				F39D9C321DDD550300B2100A /* TouchIdController.xib in Resources */,
@@ -440,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F39D9C1E1DDD548300B2100A /* ViewController.m in Sources */,
+				F3E56BF11DF51A3F008AE132 /* FaceController.m in Sources */,
 				F3CBD6C81DEEF46E00B1ECAA /* GQUserInfoDataSource.m in Sources */,
 				F39D9C1B1DDD548300B2100A /* AppDelegate.m in Sources */,
 				F39D9C311DDD550300B2100A /* TouchIdController.m in Sources */,
