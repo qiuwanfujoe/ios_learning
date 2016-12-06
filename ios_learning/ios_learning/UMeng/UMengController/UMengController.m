@@ -32,7 +32,7 @@
 - (IBAction)share:(id)sender {
     __weak typeof(self) weakSelf = self;
     //显示分享面板
-    [UMSocialUIManager setPreDefinePlatforms:@[@(UMSocialPlatformType_QQ),@(UMSocialPlatformType_Qzone),@(UMSocialPlatformType_WechatSession),@(UMSocialPlatformType_WechatTimeLine), @(UMSocialPlatformType_WechatFavorite)]];
+    [UMSocialUIManager setPreDefinePlatforms:@[@(UMSocialPlatformType_QQ),@(UMSocialPlatformType_Qzone),@(UMSocialPlatformType_WechatSession),@(UMSocialPlatformType_WechatTimeLine), @(UMSocialPlatformType_WechatFavorite),@(UMSocialPlatformType_Sina)]];
     [UMSocialUIManager showShareMenuViewInWindowWithPlatformSelectionBlock:^(UMSocialPlatformType platformType, NSDictionary *userInfo) {
         
         //参考：http://dev.umeng.com/social/ios/%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3#7_6_4

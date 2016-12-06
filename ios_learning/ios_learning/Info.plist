@@ -27,7 +27,7 @@
 			<string>com.weibo</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wb2547227808</string>
+				<string>wb436133357</string>
 			</array>
 		</dict>
 		<dict>
@@ -88,7 +88,7 @@
 		<string>mqqopensdkdataline</string>
 		<string>mqqgamebindinggroup</string>
 		<string>mqqopensdkgrouptribeshare</string>
-        <string>mqqopensdkapiv4</string>
+		<string>mqqopensdkapiv4</string>
 		<string>tencentapi.qq.reqContent</string>
 		<string>tencentapi.qzone.reqContent</string>
 		<string>weixin</string>

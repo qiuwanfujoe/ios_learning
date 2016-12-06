@@ -11,14 +11,6 @@
 #import <RongIMKit/RongIMKit.h>
 #import <UMSocialCore/UMSocialCore.h>
 
-#define kSinaWeiboAppKey @"2547227808"
-#define kRedirectURI    @"http://juzizc.com"
-#define kWeixinAppKey @"wx0dc498744b2d7638"
-#define kWeixinAppSecretKey @"c2fbb4b9f4e8b9123e4ddf9ae2f09fbc"
-
-#define kQQAppId @"1105069449"
-#define kQQSchema @"tencent1105069449"
-
 @interface AppDelegate ()
 
 @end
@@ -80,7 +72,7 @@
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1105069449"  appSecret:nil redirectURL:@"http://mobile.umeng.com/social"];
     
     //设置新浪的appKey和appSecret
-//    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:@"2547227808"  appSecret:@"04b48b094faeb16683c32669824ebdad" redirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:@"436133357"  appSecret:@"84c5bea419d8a2b84f33074b8c7c662c" redirectURL:@"http://sns.whalecloud.com/sina2/callback"];
 }
 
 @end
