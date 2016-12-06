@@ -22,6 +22,8 @@
 		F35138F41DF5693E009F8A1C /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F35138E61DF5693D009F8A1C /* UMSocialSDKResources.bundle */; };
 		F35138F51DF5693E009F8A1C /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35138E71DF5693D009F8A1C /* UShareUI.framework */; };
 		F35138F81DF581B0009F8A1C /* UMengController.m in Sources */ = {isa = PBXBuildFile; fileRef = F35138F71DF581B0009F8A1C /* UMengController.m */; };
+		F35139331DF6EB2E009F8A1C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35139321DF6EB2E009F8A1C /* UMMobClick.framework */; };
+		F35139361DF6EBC3009F8A1C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35139351DF6EBC3009F8A1C /* UMMobClick.framework */; };
 		F39D9C181DDD548300B2100A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F39D9C171DDD548300B2100A /* main.m */; };
 		F39D9C1B1DDD548300B2100A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F39D9C1A1DDD548300B2100A /* AppDelegate.m */; };
 		F39D9C1E1DDD548300B2100A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39D9C1D1DDD548300B2100A /* ViewController.m */; };
@@ -117,6 +119,8 @@
 		F35138E71DF5693D009F8A1C /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
 		F35138F61DF581B0009F8A1C /* UMengController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMengController.h; sourceTree = "<group>"; };
 		F35138F71DF581B0009F8A1C /* UMengController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMengController.m; sourceTree = "<group>"; };
+		F35139321DF6EB2E009F8A1C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = ../../../../Downloads/umsdk_IOS_analyics_idfa_v4.1.4/UMMobClick.framework; sourceTree = "<group>"; };
+		F35139351DF6EBC3009F8A1C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		F39D9C131DDD548300B2100A /* ios_learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D9C171DDD548300B2100A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F39D9C191DDD548300B2100A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35139331DF6EB2E009F8A1C /* UMMobClick.framework in Frameworks */,
 				F35138F21DF5693E009F8A1C /* UMSocialCore.framework in Frameworks */,
 				F3CBD7171DF010F200B1ECAA /* CoreMotion.framework in Frameworks */,
 				F3CBD7151DF010E700B1ECAA /* Foundation.framework in Frameworks */,
@@ -212,6 +217,7 @@
 				F35138EB1DF5693E009F8A1C /* libSocialSina.a in Frameworks */,
 				F3CBD69D1DEED29D00B1ECAA /* libz.tbd in Frameworks */,
 				F3CBD69B1DEED29300B1ECAA /* libxml2.tbd in Frameworks */,
+				F35139361DF6EBC3009F8A1C /* UMMobClick.framework in Frameworks */,
 				F3CBD6BF1DEED8B400B1ECAA /* libopencore-amrnb.a in Frameworks */,
 				F35138EF1DF5693E009F8A1C /* libWeChatSDK.a in Frameworks */,
 				F3CBD6991DEED28900B1ECAA /* libstdc++.tbd in Frameworks */,
@@ -246,6 +252,7 @@
 		F35138C01DF5693D009F8A1C /* UMeng */ = {
 			isa = PBXGroup;
 			children = (
+				F35139341DF6EBC3009F8A1C /* UMAnalytics */,
 				F35138C11DF5693D009F8A1C /* UMengController */,
 				F35138C21DF5693D009F8A1C /* UMSocial */,
 			);
@@ -347,6 +354,14 @@
 			path = UMSocialUI;
 			sourceTree = "<group>";
 		};
+		F35139341DF6EBC3009F8A1C /* UMAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				F35139351DF6EBC3009F8A1C /* UMMobClick.framework */,
+			);
+			path = UMAnalytics;
+			sourceTree = "<group>";
+		};
 		F39D9C0A1DDD548300B2100A = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +441,7 @@
 		F3CBD67B1DEED20200B1ECAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F35139321DF6EB2E009F8A1C /* UMMobClick.framework */,
 				F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */,
 				F3CBD7141DF010E700B1ECAA /* Foundation.framework */,
 				F3CBD7121DF010D200B1ECAA /* CoreText.framework */,
@@ -790,6 +806,7 @@
 					"$(PROJECT_DIR)/ios_learning/UMeng/UMSocial/SocialLibraries/QQ",
 					"$(PROJECT_DIR)/ios_learning/UMeng/UMSocial/UMSocialSDK",
 					"$(PROJECT_DIR)/ios_learning/UMeng/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/ios_learning/UMeng/UMAnalytics",
 				);
 				INFOPLIST_FILE = ios_learning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -820,6 +837,7 @@
 					"$(PROJECT_DIR)/ios_learning/UMeng/UMSocial/SocialLibraries/QQ",
 					"$(PROJECT_DIR)/ios_learning/UMeng/UMSocial/UMSocialSDK",
 					"$(PROJECT_DIR)/ios_learning/UMeng/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/ios_learning/UMeng/UMAnalytics",
 				);
 				INFOPLIST_FILE = ios_learning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

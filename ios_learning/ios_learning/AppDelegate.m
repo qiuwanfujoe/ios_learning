@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import <RongIMKit/RongIMKit.h>
 #import <UMSocialCore/UMSocialCore.h>
+#import "UMMobClick/MobClick.h"
 
 @interface AppDelegate ()
 
@@ -73,6 +74,15 @@
     
     //设置新浪的appKey和appSecret
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:@"436133357"  appSecret:@"84c5bea419d8a2b84f33074b8c7c662c" redirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+
+    //app统计
+    UMConfigInstance.appKey = @"58455cf8e88bad18ca000fd8";
+    UMConfigInstance.channelId = @"App Store";
+//    UMConfigInstance.eSType = E_UM_GAME; //仅适用于游戏场景，应用统计不用设置
+    [MobClick startWithConfigure:UMConfigInstance];//配置以上参数后调用此方法初始化SDK！
+    
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    [MobClick setAppVersion:version];
 }
 
 @end

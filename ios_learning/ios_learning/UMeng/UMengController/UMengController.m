@@ -9,6 +9,8 @@
 #import "UMengController.h"
 #import <UShareUI/UMSocialUIManager.h>
 #import <UShareUI/UMSocialShareUIConfig.h>
+#import "UMMobClick/MobClick.h"
+
 @interface UMengController ()
 @property (nonatomic, strong) UIButton *button;
 @end
@@ -28,8 +30,20 @@
     [self.view addSubview:self.button];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [MobClick beginLogPageView:@"UMengController"];//("PageOne"为页面名称，可自定义)
+}
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:@"UMengController"];
+}
+
 //点击分享按钮
 - (IBAction)share:(id)sender {
+    [MobClick event:@"click"];
     __weak typeof(self) weakSelf = self;
     //显示分享面板
     [UMSocialUIManager setPreDefinePlatforms:@[@(UMSocialPlatformType_QQ),@(UMSocialPlatformType_Qzone),@(UMSocialPlatformType_WechatSession),@(UMSocialPlatformType_WechatTimeLine), @(UMSocialPlatformType_WechatFavorite),@(UMSocialPlatformType_Sina)]];
