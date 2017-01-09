@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ios_learning.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F30449881E236F7900309E81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F39D9C121DDD548300B2100A</key>
 		<dict>
 			<key>primary</key>

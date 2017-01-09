@@ -22,8 +22,4 @@
     [self.view addSubview:backImg];
 }
 
-
-
-
-
 @end
