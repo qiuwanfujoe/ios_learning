@@ -17,6 +17,7 @@
 #import "LViewController.h"
 #import "LLeftViewController.h"
 #import "LDrawerViewController.h"
+#import "ImageTextViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *funtionArray;
@@ -26,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.funtionArray = [@[@"指纹识别", @"融云聊天", @"二维码", @"人脸识别",@"友盟分享",@"YYModel",@"仿QQ弹出层",@"左滑菜单"] mutableCopy];
+    self.funtionArray = [@[@"指纹识别", @"融云聊天", @"二维码", @"人脸识别",@"友盟分享",@"YYModel",@"仿QQ弹出层",@"左滑菜单", @"图文混排"] mutableCopy];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -80,6 +81,9 @@
         LLeftViewController *leftVC = [[LLeftViewController alloc] init];
         LDrawerViewController *drawerVC = [[LDrawerViewController alloc] initWithCenterController:centerVC leftController:leftVC];
         [self.navigationController pushViewController:drawerVC animated:YES];
+    }  else if ([title isEqualToString:@"图文混排"]) {
+        ImageTextViewController *vc = [[ImageTextViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 
 }

@@ -35,6 +35,8 @@
 		F35138F81DF581B0009F8A1C /* UMengController.m in Sources */ = {isa = PBXBuildFile; fileRef = F35138F71DF581B0009F8A1C /* UMengController.m */; };
 		F35139331DF6EB2E009F8A1C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35139321DF6EB2E009F8A1C /* UMMobClick.framework */; };
 		F35139361DF6EBC3009F8A1C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35139351DF6EBC3009F8A1C /* UMMobClick.framework */; };
+		F356D55C1E5BE95D00F298E9 /* ImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F356D55B1E5BE95D00F298E9 /* ImageTextViewController.m */; };
+		F356D55E1E5BEA9A00F298E9 /* bg_airticket_carrier@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F356D55D1E5BEA9A00F298E9 /* bg_airticket_carrier@2x.png */; };
 		F38A28A81E0BCD2C00F1BD16 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F38A28A41E0BCD2C00F1BD16 /* NSObject+YYModel.m */; };
 		F38A28A91E0BCD2C00F1BD16 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F38A28A61E0BCD2C00F1BD16 /* YYClassInfo.m */; };
 		F38A28AC1E0BCDAB00F1BD16 /* YYModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38A28AB1E0BCDAB00F1BD16 /* YYModelController.m */; };
@@ -198,6 +200,9 @@
 		F35138F71DF581B0009F8A1C /* UMengController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMengController.m; sourceTree = "<group>"; };
 		F35139321DF6EB2E009F8A1C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = ../../../../Downloads/umsdk_IOS_analyics_idfa_v4.1.4/UMMobClick.framework; sourceTree = "<group>"; };
 		F35139351DF6EBC3009F8A1C /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		F356D55A1E5BE95D00F298E9 /* ImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextViewController.h; sourceTree = "<group>"; };
+		F356D55B1E5BE95D00F298E9 /* ImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextViewController.m; sourceTree = "<group>"; };
+		F356D55D1E5BEA9A00F298E9 /* bg_airticket_carrier@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_airticket_carrier@2x.png"; sourceTree = "<group>"; };
 		F38A28A31E0BCD2C00F1BD16 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		F38A28A41E0BCD2C00F1BD16 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		F38A28A51E0BCD2C00F1BD16 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
@@ -528,6 +533,16 @@
 			path = UMAnalytics;
 			sourceTree = "<group>";
 		};
+		F356D5591E5BE94E00F298E9 /* ImageTextViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F356D55D1E5BEA9A00F298E9 /* bg_airticket_carrier@2x.png */,
+				F356D55A1E5BE95D00F298E9 /* ImageTextViewController.h */,
+				F356D55B1E5BE95D00F298E9 /* ImageTextViewController.m */,
+			);
+			path = ImageTextViewController;
+			sourceTree = "<group>";
+		};
 		F38A28A11E0BCD2C00F1BD16 /* YYModelController */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +646,7 @@
 		F39D9C151DDD548300B2100A /* ios_learning */ = {
 			isa = PBXGroup;
 			children = (
+				F356D5591E5BE94E00F298E9 /* ImageTextViewController */,
 				F304499B1E23727F00309E81 /* LeftMenuController */,
 				F38A28C51E0FE32400F1BD16 /* QQPopViewController */,
 				F38A28A11E0BCD2C00F1BD16 /* YYModelController */,
@@ -917,6 +933,7 @@
 				F3E56BFE1DF52287008AE132 /* faces5.jpg in Resources */,
 				F35138ED1DF5693E009F8A1C /* WeiboSDK.bundle in Resources */,
 				F3CBD70C1DF00EF200B1ECAA /* AlipaySDK.bundle in Resources */,
+				F356D55E1E5BEA9A00F298E9 /* bg_airticket_carrier@2x.png in Resources */,
 				F3CBD6B91DEED85F00B1ECAA /* RongCloud.bundle in Resources */,
 				F3CBD6B71DEED85F00B1ECAA /* Emoji.plist in Resources */,
 				F38A28E61E0FE32400F1BD16 /* right_menu_QR@3x.png in Resources */,
@@ -962,6 +979,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F38A28C41E0BEB8F00F1BD16 /* YYAttachment.m in Sources */,
+				F356D55C1E5BE95D00F298E9 /* ImageTextViewController.m in Sources */,
 				F38A28AC1E0BCDAB00F1BD16 /* YYModelController.m in Sources */,
 				F38A28E11E0FE32400F1BD16 /* WBTableViewDelegate.m in Sources */,
 				F38A28DD1E0FE32400F1BD16 /* WBPopMenuSingleton.m in Sources */,
@@ -1231,6 +1249,7 @@
 				F30449981E236F7900309E81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F39D9C0E1DDD548300B2100A /* Build configuration list for PBXProject "ios_learning" */ = {
 			isa = XCConfigurationList;
