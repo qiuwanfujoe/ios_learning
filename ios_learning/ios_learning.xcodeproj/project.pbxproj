@@ -69,6 +69,8 @@
 		F39D9C311DDD550300B2100A /* TouchIdController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39D9C2F1DDD550300B2100A /* TouchIdController.m */; };
 		F39D9C321DDD550300B2100A /* TouchIdController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F39D9C301DDD550300B2100A /* TouchIdController.xib */; };
 		F39D9C341DDD557300B2100A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F39D9C331DDD557300B2100A /* ViewController.xib */; };
+		F3A0B5B21EFD33F30056D54B /* LeftDeleteController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A0B5B11EFD33F30056D54B /* LeftDeleteController.m */; };
+		F3A0B5B51F00AD9D0056D54B /* LeftDeleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A0B5B41F00AD9D0056D54B /* LeftDeleteCell.m */; };
 		F3CBD67D1DEED20200B1ECAA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD67C1DEED20200B1ECAA /* AssetsLibrary.framework */; };
 		F3CBD67F1DEED20B00B1ECAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD67E1DEED20B00B1ECAA /* AudioToolbox.framework */; };
 		F3CBD6811DEED21200B1ECAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD6801DEED21200B1ECAA /* AVFoundation.framework */; };
@@ -259,6 +261,10 @@
 		F39D9C2F1DDD550300B2100A /* TouchIdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIdController.m; sourceTree = "<group>"; };
 		F39D9C301DDD550300B2100A /* TouchIdController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIdController.xib; sourceTree = "<group>"; };
 		F39D9C331DDD557300B2100A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		F3A0B5B01EFD33F30056D54B /* LeftDeleteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDeleteController.h; sourceTree = "<group>"; };
+		F3A0B5B11EFD33F30056D54B /* LeftDeleteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftDeleteController.m; sourceTree = "<group>"; };
+		F3A0B5B31F00AD9D0056D54B /* LeftDeleteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDeleteCell.h; sourceTree = "<group>"; };
+		F3A0B5B41F00AD9D0056D54B /* LeftDeleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftDeleteCell.m; sourceTree = "<group>"; };
 		F3CBD67C1DEED20200B1ECAA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F3CBD67E1DEED20B00B1ECAA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F3CBD6801DEED21200B1ECAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -646,6 +652,7 @@
 		F39D9C151DDD548300B2100A /* ios_learning */ = {
 			isa = PBXGroup;
 			children = (
+				F3A0B5AF1EFD33D70056D54B /* LeftDeleteController */,
 				F356D5591E5BE94E00F298E9 /* ImageTextViewController */,
 				F304499B1E23727F00309E81 /* LeftMenuController */,
 				F38A28C51E0FE32400F1BD16 /* QQPopViewController */,
@@ -684,6 +691,17 @@
 				F39D9C301DDD550300B2100A /* TouchIdController.xib */,
 			);
 			path = TouchIdController;
+			sourceTree = "<group>";
+		};
+		F3A0B5AF1EFD33D70056D54B /* LeftDeleteController */ = {
+			isa = PBXGroup;
+			children = (
+				F3A0B5B01EFD33F30056D54B /* LeftDeleteController.h */,
+				F3A0B5B11EFD33F30056D54B /* LeftDeleteController.m */,
+				F3A0B5B31F00AD9D0056D54B /* LeftDeleteCell.h */,
+				F3A0B5B41F00AD9D0056D54B /* LeftDeleteCell.m */,
+			);
+			path = LeftDeleteController;
 			sourceTree = "<group>";
 		};
 		F3CBD66E1DEED1D500B1ECAA /* RongCloud */ = {
@@ -996,8 +1014,10 @@
 				F38A28A91E0BCD2C00F1BD16 /* YYClassInfo.m in Sources */,
 				F39D9C1B1DDD548300B2100A /* AppDelegate.m in Sources */,
 				F38A28E81E0FE32400F1BD16 /* QQPopViewController.m in Sources */,
+				F3A0B5B21EFD33F30056D54B /* LeftDeleteController.m in Sources */,
 				F30449AD1E23727F00309E81 /* LDrawerViewController.m in Sources */,
 				F30449AB1E23727F00309E81 /* LCnterViewController.m in Sources */,
+				F3A0B5B51F00AD9D0056D54B /* LeftDeleteCell.m in Sources */,
 				F39D9C311DDD550300B2100A /* TouchIdController.m in Sources */,
 				F30449AF1E23727F00309E81 /* LLeftViewController.m in Sources */,
 				F38A28BE1E0BEB6700F1BD16 /* YYShadow.m in Sources */,

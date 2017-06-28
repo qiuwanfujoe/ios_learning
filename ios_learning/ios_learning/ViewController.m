@@ -18,6 +18,7 @@
 #import "LLeftViewController.h"
 #import "LDrawerViewController.h"
 #import "ImageTextViewController.h"
+#import "LeftDeleteController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *funtionArray;
@@ -27,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.funtionArray = [@[@"指纹识别", @"融云聊天", @"二维码", @"人脸识别",@"友盟分享",@"YYModel",@"仿QQ弹出层",@"左滑菜单", @"图文混排"] mutableCopy];
+    self.funtionArray = [@[@"指纹识别", @"融云聊天", @"二维码", @"人脸识别",@"友盟分享",@"YYModel",@"仿QQ弹出层",@"左滑菜单", @"图文混排",@"侧滑删除"] mutableCopy];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -83,6 +84,9 @@
         [self.navigationController pushViewController:drawerVC animated:YES];
     }  else if ([title isEqualToString:@"图文混排"]) {
         ImageTextViewController *vc = [[ImageTextViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }  else if ([title isEqualToString:@"侧滑删除"]) {
+        LeftDeleteController *vc = [[LeftDeleteController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 
