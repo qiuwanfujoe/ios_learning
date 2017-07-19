@@ -25,6 +25,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_tableView];
     // Do any additional setup after loading the view, typically from a nib.
     self.funtionArray = [@[@"Present", @"Push"] mutableCopy];
