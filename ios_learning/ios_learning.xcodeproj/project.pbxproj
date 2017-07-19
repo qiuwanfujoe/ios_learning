@@ -71,6 +71,17 @@
 		F39D9C341DDD557300B2100A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F39D9C331DDD557300B2100A /* ViewController.xib */; };
 		F3A0B5B21EFD33F30056D54B /* LeftDeleteController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A0B5B11EFD33F30056D54B /* LeftDeleteController.m */; };
 		F3A0B5B51F00AD9D0056D54B /* LeftDeleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A0B5B41F00AD9D0056D54B /* LeftDeleteCell.m */; };
+		F3A0B5C51F0391910056D54B /* JavaScriptCoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A0B5C41F0391910056D54B /* JavaScriptCoreController.m */; };
+		F3A0B5C71F0392730056D54B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A0B5C61F0392730056D54B /* JavaScriptCore.framework */; };
+		F3C73C161F1F773B0036E23A /* DismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C051F1F773B0036E23A /* DismissAnimator.m */; };
+		F3C73C181F1F773B0036E23A /* PresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C091F1F773B0036E23A /* PresentAnimator.m */; };
+		F3C73C191F1F773B0036E23A /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C0B1F1F773B0036E23A /* PresentViewController.m */; };
+		F3C73C1D1F1F773B0036E23A /* TransitionAnimatorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C131F1F773B0036E23A /* TransitionAnimatorDelegate.m */; };
+		F3C73C1E1F1F773B0036E23A /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C151F1F773B0036E23A /* TransitionController.m */; };
+		F3C73C271F1F77F90036E23A /* PopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C201F1F77F90036E23A /* PopAnimator.m */; };
+		F3C73C281F1F77F90036E23A /* PushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C221F1F77F90036E23A /* PushAnimator.m */; };
+		F3C73C291F1F77F90036E23A /* PushTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C241F1F77F90036E23A /* PushTransitionDelegate.m */; };
+		F3C73C301F1F79180036E23A /* CustomPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C73C2F1F1F79180036E23A /* CustomPushController.m */; };
 		F3CBD67D1DEED20200B1ECAA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD67C1DEED20200B1ECAA /* AssetsLibrary.framework */; };
 		F3CBD67F1DEED20B00B1ECAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD67E1DEED20B00B1ECAA /* AudioToolbox.framework */; };
 		F3CBD6811DEED21200B1ECAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBD6801DEED21200B1ECAA /* AVFoundation.framework */; };
@@ -265,6 +276,27 @@
 		F3A0B5B11EFD33F30056D54B /* LeftDeleteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftDeleteController.m; sourceTree = "<group>"; };
 		F3A0B5B31F00AD9D0056D54B /* LeftDeleteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDeleteCell.h; sourceTree = "<group>"; };
 		F3A0B5B41F00AD9D0056D54B /* LeftDeleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftDeleteCell.m; sourceTree = "<group>"; };
+		F3A0B5C31F0391910056D54B /* JavaScriptCoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreController.h; sourceTree = "<group>"; };
+		F3A0B5C41F0391910056D54B /* JavaScriptCoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreController.m; sourceTree = "<group>"; };
+		F3A0B5C61F0392730056D54B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F3C73C041F1F773B0036E23A /* DismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissAnimator.h; sourceTree = "<group>"; };
+		F3C73C051F1F773B0036E23A /* DismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissAnimator.m; sourceTree = "<group>"; };
+		F3C73C081F1F773B0036E23A /* PresentAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentAnimator.h; sourceTree = "<group>"; };
+		F3C73C091F1F773B0036E23A /* PresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentAnimator.m; sourceTree = "<group>"; };
+		F3C73C0A1F1F773B0036E23A /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		F3C73C0B1F1F773B0036E23A /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		F3C73C121F1F773B0036E23A /* TransitionAnimatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimatorDelegate.h; sourceTree = "<group>"; };
+		F3C73C131F1F773B0036E23A /* TransitionAnimatorDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimatorDelegate.m; sourceTree = "<group>"; };
+		F3C73C141F1F773B0036E23A /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		F3C73C151F1F773B0036E23A /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
+		F3C73C1F1F1F77F90036E23A /* PopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimator.h; sourceTree = "<group>"; };
+		F3C73C201F1F77F90036E23A /* PopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimator.m; sourceTree = "<group>"; };
+		F3C73C211F1F77F90036E23A /* PushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAnimator.h; sourceTree = "<group>"; };
+		F3C73C221F1F77F90036E23A /* PushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAnimator.m; sourceTree = "<group>"; };
+		F3C73C231F1F77F90036E23A /* PushTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushTransitionDelegate.h; sourceTree = "<group>"; };
+		F3C73C241F1F77F90036E23A /* PushTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushTransitionDelegate.m; sourceTree = "<group>"; };
+		F3C73C2E1F1F79180036E23A /* CustomPushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPushController.h; sourceTree = "<group>"; };
+		F3C73C2F1F1F79180036E23A /* CustomPushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPushController.m; sourceTree = "<group>"; };
 		F3CBD67C1DEED20200B1ECAA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F3CBD67E1DEED20B00B1ECAA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F3CBD6801DEED21200B1ECAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -338,6 +370,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A0B5C71F0392730056D54B /* JavaScriptCore.framework in Frameworks */,
 				F35139331DF6EB2E009F8A1C /* UMMobClick.framework in Frameworks */,
 				F35138F21DF5693E009F8A1C /* UMSocialCore.framework in Frameworks */,
 				F3CBD7171DF010F200B1ECAA /* CoreMotion.framework in Frameworks */,
@@ -652,6 +685,8 @@
 		F39D9C151DDD548300B2100A /* ios_learning */ = {
 			isa = PBXGroup;
 			children = (
+				F3C73C031F1F773B0036E23A /* TransitionController */,
+				F3A0B5C21F03917C0056D54B /* JavaScriptCoreController */,
 				F3A0B5AF1EFD33D70056D54B /* LeftDeleteController */,
 				F356D5591E5BE94E00F298E9 /* ImageTextViewController */,
 				F304499B1E23727F00309E81 /* LeftMenuController */,
@@ -704,6 +739,40 @@
 			path = LeftDeleteController;
 			sourceTree = "<group>";
 		};
+		F3A0B5C21F03917C0056D54B /* JavaScriptCoreController */ = {
+			isa = PBXGroup;
+			children = (
+				F3A0B5C31F0391910056D54B /* JavaScriptCoreController.h */,
+				F3A0B5C41F0391910056D54B /* JavaScriptCoreController.m */,
+			);
+			path = JavaScriptCoreController;
+			sourceTree = "<group>";
+		};
+		F3C73C031F1F773B0036E23A /* TransitionController */ = {
+			isa = PBXGroup;
+			children = (
+				F3C73C1F1F1F77F90036E23A /* PopAnimator.h */,
+				F3C73C201F1F77F90036E23A /* PopAnimator.m */,
+				F3C73C211F1F77F90036E23A /* PushAnimator.h */,
+				F3C73C221F1F77F90036E23A /* PushAnimator.m */,
+				F3C73C231F1F77F90036E23A /* PushTransitionDelegate.h */,
+				F3C73C241F1F77F90036E23A /* PushTransitionDelegate.m */,
+				F3C73C041F1F773B0036E23A /* DismissAnimator.h */,
+				F3C73C051F1F773B0036E23A /* DismissAnimator.m */,
+				F3C73C081F1F773B0036E23A /* PresentAnimator.h */,
+				F3C73C091F1F773B0036E23A /* PresentAnimator.m */,
+				F3C73C0A1F1F773B0036E23A /* PresentViewController.h */,
+				F3C73C0B1F1F773B0036E23A /* PresentViewController.m */,
+				F3C73C121F1F773B0036E23A /* TransitionAnimatorDelegate.h */,
+				F3C73C131F1F773B0036E23A /* TransitionAnimatorDelegate.m */,
+				F3C73C141F1F773B0036E23A /* TransitionController.h */,
+				F3C73C151F1F773B0036E23A /* TransitionController.m */,
+				F3C73C2E1F1F79180036E23A /* CustomPushController.h */,
+				F3C73C2F1F1F79180036E23A /* CustomPushController.m */,
+			);
+			path = TransitionController;
+			sourceTree = "<group>";
+		};
 		F3CBD66E1DEED1D500B1ECAA /* RongCloud */ = {
 			isa = PBXGroup;
 			children = (
@@ -727,6 +796,7 @@
 		F3CBD67B1DEED20200B1ECAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3A0B5C61F0392730056D54B /* JavaScriptCore.framework */,
 				F35139321DF6EB2E009F8A1C /* UMMobClick.framework */,
 				F3CBD7161DF010F200B1ECAA /* CoreMotion.framework */,
 				F3CBD7141DF010E700B1ECAA /* Foundation.framework */,
@@ -997,21 +1067,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				F38A28C41E0BEB8F00F1BD16 /* YYAttachment.m in Sources */,
+				F3C73C161F1F773B0036E23A /* DismissAnimator.m in Sources */,
+				F3C73C301F1F79180036E23A /* CustomPushController.m in Sources */,
 				F356D55C1E5BE95D00F298E9 /* ImageTextViewController.m in Sources */,
 				F38A28AC1E0BCDAB00F1BD16 /* YYModelController.m in Sources */,
+				F3C73C281F1F77F90036E23A /* PushAnimator.m in Sources */,
 				F38A28E11E0FE32400F1BD16 /* WBTableViewDelegate.m in Sources */,
 				F38A28DD1E0FE32400F1BD16 /* WBPopMenuSingleton.m in Sources */,
+				F3C73C1E1F1F773B0036E23A /* TransitionController.m in Sources */,
 				F39D9C1E1DDD548300B2100A /* ViewController.m in Sources */,
 				F3E56BF11DF51A3F008AE132 /* FaceController.m in Sources */,
 				F38A28B21E0BD05000F1BD16 /* YYBook.m in Sources */,
+				F3C73C1D1F1F773B0036E23A /* TransitionAnimatorDelegate.m in Sources */,
 				F38A28DC1E0FE32400F1BD16 /* WBPopMenuModel.m in Sources */,
 				F38A28DF1E0FE32400F1BD16 /* WBTableViewCell.m in Sources */,
+				F3C73C191F1F773B0036E23A /* PresentViewController.m in Sources */,
 				F35138F81DF581B0009F8A1C /* UMengController.m in Sources */,
 				F38A28C11E0BEB7700F1BD16 /* YYBorder.m in Sources */,
 				F38A28B81E0BD33D00F1BD16 /* YYBook2.m in Sources */,
 				F38A28E01E0FE32400F1BD16 /* WBTableViewDataSource.m in Sources */,
+				F3C73C181F1F773B0036E23A /* PresentAnimator.m in Sources */,
 				F3CBD6C81DEEF46E00B1ECAA /* GQUserInfoDataSource.m in Sources */,
 				F38A28A91E0BCD2C00F1BD16 /* YYClassInfo.m in Sources */,
+				F3A0B5C51F0391910056D54B /* JavaScriptCoreController.m in Sources */,
 				F39D9C1B1DDD548300B2100A /* AppDelegate.m in Sources */,
 				F38A28E81E0FE32400F1BD16 /* QQPopViewController.m in Sources */,
 				F3A0B5B21EFD33F30056D54B /* LeftDeleteController.m in Sources */,
@@ -1025,11 +1103,13 @@
 				F38A28B51E0BD31800F1BD16 /* YYAuthor.m in Sources */,
 				F30449AE1E23727F00309E81 /* LViewController.m in Sources */,
 				F30449AC1E23727F00309E81 /* LCnterView.m in Sources */,
+				F3C73C271F1F77F90036E23A /* PopAnimator.m in Sources */,
 				F39D9C181DDD548300B2100A /* main.m in Sources */,
 				F38A28DE1E0FE32400F1BD16 /* WBPopMenuView.m in Sources */,
 				F38A28AF1E0BCE7000F1BD16 /* YYUser.m in Sources */,
 				F38A28BB1E0BD8D200F1BD16 /* YYAttributes.m in Sources */,
 				F38A28A81E0BCD2C00F1BD16 /* NSObject+YYModel.m in Sources */,
+				F3C73C291F1F77F90036E23A /* PushTransitionDelegate.m in Sources */,
 				F3CBD6AF1DEED3C500B1ECAA /* GQChatListController.m in Sources */,
 				F3CBD7801DF1746A00B1ECAA /* QRCodeController.m in Sources */,
 			);
