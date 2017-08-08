@@ -37,6 +37,7 @@
 		F35139361DF6EBC3009F8A1C /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35139351DF6EBC3009F8A1C /* UMMobClick.framework */; };
 		F356D55C1E5BE95D00F298E9 /* ImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F356D55B1E5BE95D00F298E9 /* ImageTextViewController.m */; };
 		F356D55E1E5BEA9A00F298E9 /* bg_airticket_carrier@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F356D55D1E5BEA9A00F298E9 /* bg_airticket_carrier@2x.png */; };
+		F37471941F38458E000C5E30 /* PhotoLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F37471931F38458E000C5E30 /* PhotoLibraryController.m */; };
 		F38A28A81E0BCD2C00F1BD16 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F38A28A41E0BCD2C00F1BD16 /* NSObject+YYModel.m */; };
 		F38A28A91E0BCD2C00F1BD16 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F38A28A61E0BCD2C00F1BD16 /* YYClassInfo.m */; };
 		F38A28AC1E0BCDAB00F1BD16 /* YYModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38A28AB1E0BCDAB00F1BD16 /* YYModelController.m */; };
@@ -216,6 +217,8 @@
 		F356D55A1E5BE95D00F298E9 /* ImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextViewController.h; sourceTree = "<group>"; };
 		F356D55B1E5BE95D00F298E9 /* ImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextViewController.m; sourceTree = "<group>"; };
 		F356D55D1E5BEA9A00F298E9 /* bg_airticket_carrier@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_airticket_carrier@2x.png"; sourceTree = "<group>"; };
+		F37471921F38458E000C5E30 /* PhotoLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryController.h; sourceTree = "<group>"; };
+		F37471931F38458E000C5E30 /* PhotoLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryController.m; sourceTree = "<group>"; };
 		F38A28A31E0BCD2C00F1BD16 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		F38A28A41E0BCD2C00F1BD16 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
 		F38A28A51E0BCD2C00F1BD16 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
@@ -582,6 +585,15 @@
 			path = ImageTextViewController;
 			sourceTree = "<group>";
 		};
+		F37471911F38457F000C5E30 /* PhotoLibraryController */ = {
+			isa = PBXGroup;
+			children = (
+				F37471921F38458E000C5E30 /* PhotoLibraryController.h */,
+				F37471931F38458E000C5E30 /* PhotoLibraryController.m */,
+			);
+			path = PhotoLibraryController;
+			sourceTree = "<group>";
+		};
 		F38A28A11E0BCD2C00F1BD16 /* YYModelController */ = {
 			isa = PBXGroup;
 			children = (
@@ -685,6 +697,7 @@
 		F39D9C151DDD548300B2100A /* ios_learning */ = {
 			isa = PBXGroup;
 			children = (
+				F37471911F38457F000C5E30 /* PhotoLibraryController */,
 				F3C73C031F1F773B0036E23A /* TransitionController */,
 				F3A0B5C21F03917C0056D54B /* JavaScriptCoreController */,
 				F3A0B5AF1EFD33D70056D54B /* LeftDeleteController */,
@@ -974,13 +987,13 @@
 				TargetAttributes = {
 					F30449881E236F7900309E81 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 8BWMP5PQDU;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 9QPBY7TW9P;
+						ProvisioningStyle = Manual;
 					};
 					F39D9C121DDD548300B2100A = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 8BWMP5PQDU;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 9QPBY7TW9P;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1075,6 +1088,7 @@
 				F38A28E11E0FE32400F1BD16 /* WBTableViewDelegate.m in Sources */,
 				F38A28DD1E0FE32400F1BD16 /* WBPopMenuSingleton.m in Sources */,
 				F3C73C1E1F1F773B0036E23A /* TransitionController.m in Sources */,
+				F37471941F38458E000C5E30 /* PhotoLibraryController.m in Sources */,
 				F39D9C1E1DDD548300B2100A /* ViewController.m in Sources */,
 				F3E56BF11DF51A3F008AE132 /* FaceController.m in Sources */,
 				F38A28B21E0BD05000F1BD16 /* YYBook.m in Sources */,
@@ -1166,12 +1180,15 @@
 		F30449971E236F7900309E81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 8BWMP5PQDU;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SUN LONGBO (AT653BDG27)";
+				DEVELOPMENT_TEAM = 9QPBY7TW9P;
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gideon.ios-learning.TodayExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fbfd9639-19ab-4f99-939d-1f6da2d78d5a";
+				PROVISIONING_PROFILE_SPECIFIER = Schedule_Profile;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1179,7 +1196,8 @@
 		F30449981E236F7900309E81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 8BWMP5PQDU;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SUN LONGBO (AT653BDG27)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TodayExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1281,7 +1299,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8BWMP5PQDU;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SUN LONGBO (AT653BDG27)";
+				DEVELOPMENT_TEAM = 9QPBY7TW9P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/IMKit",
@@ -1305,6 +1324,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "gideon.ios-learning";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fbfd9639-19ab-4f99-939d-1f6da2d78d5a";
+				PROVISIONING_PROFILE_SPECIFIER = Schedule_Profile;
 			};
 			name = Debug;
 		};
@@ -1312,7 +1333,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8BWMP5PQDU;
+				CODE_SIGN_IDENTITY = "iPhone Developer: SUN LONGBO (AT653BDG27)";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios_learning/RongCloud/sdk/IMKit",

@@ -21,6 +21,7 @@
 #import "LeftDeleteController.h"
 #import "JavaScriptCoreController.h"
 #import "TransitionController.h"
+#import "PhotoLibraryController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *funtionArray;
@@ -30,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.funtionArray = [@[@"指纹识别", @"融云聊天", @"二维码", @"人脸识别",@"友盟分享",@"YYModel",@"仿QQ弹出层",@"左滑菜单", @"图文混排",@"侧滑删除",@"JavaScriptCore",@"转场动画"] mutableCopy];
+    self.funtionArray = [@[@"指纹识别", @"融云聊天", @"二维码", @"人脸识别",@"友盟分享",@"YYModel",@"仿QQ弹出层",@"左滑菜单", @"图文混排",@"侧滑删除",@"JavaScriptCore",@"转场动画",@"PHPhotoLibrary"] mutableCopy];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -95,6 +96,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     }  else if ([title isEqualToString:@"转场动画"]) {
         TransitionController *vc = [[TransitionController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }  else if ([title isEqualToString:@"PHPhotoLibrary"]) {
+        PhotoLibraryController *vc = [[PhotoLibraryController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
